@@ -1,0 +1,690 @@
+[
+  {
+    "típus": "SzövegesKérdés",
+    "kérdés": "Melyik a legelterjedtebb elem az univerzumban?\n",
+    "válasz": "Hidrogén",
+    "regex": ""
+  },
+  {
+    "típus": "DátumKérdés",
+    "kérdés": "Mikor jelentette be a NASA a Hubble Űrteleszkóp sikeres pályára állítását?\n",
+    "válasz": "1990-04-25",
+    "regex": ""
+  },
+  {
+    "típus": "LebegőPontosKérdés",
+    "kérdés": "Mekkora az Euler féle szám értéke?\n",
+    "válasz": 2.71,
+    "regex": ""
+  },
+  {
+    "típus": "SzámosKérdés",
+    "kérdés": "Milyen hőmérsékleten egyenlő a Celsius és a Fahrenheit?\n",
+    "válasz": -40,
+    "regex": ""
+  },
+  {
+    "típus": "DátumKérdés",
+    "kérdés": "Mikor indult az első ember az űrbe, Jurij Gagarin személyében?\n",
+    "válasz": "1961-04-12",
+    "regex": ""
+  },
+  {
+    "típus": "SzövegesKérdés",
+    "kérdés": "Mi az a törpebolygónál kisebb, 1 méterestől akár 1000 kilométeres átmérőig terjedő, szabálytalan alakú, szilárd anyagú égitest?\n",
+    "válasz": "Kisbolygó",
+    "regex": "^(Kisbolygó|Aszteroida)$"
+  },
+  {
+    "típus": "SzövegesKérdés",
+    "kérdés": "Melyik a legnagyobb bolygó a Naprendszerben?\n",
+    "válasz": "Jupiter",
+    "regex": ""
+  },
+  {
+    "típus": "SzövegesKérdés",
+    "kérdés": "Milyen típusú galaxis az Androméda?\n",
+    "válasz": "Spirál",
+    "regex": ""
+  },
+  {
+    "típus": "SzámosKérdés",
+    "kérdés": "Mikor fedezték fel a Neptunuszt?\n",
+    "válasz": 1846,
+    "regex": ""
+  },
+  {
+    "típus": "SzámosKérdés",
+    "kérdés": "Milyen messze van a Földtől a Hold átlagosan? (kilóméterben)\n",
+    "válasz": 384400,
+    "regex": ""
+  },
+  {
+    "típus": "SzövegesKérdés",
+    "kérdés": "Mi a legközelebbi csillag a Naphoz?\n",
+    "válasz": "Proxima Centauri",
+    "regex": ""
+  },
+  {
+    "típus": "SzövegesKérdés",
+    "kérdés": "Milyen típusú csillag a Betelgeuse?\n",
+    "válasz": "Vörös óriás",
+    "regex": ""
+  },
+  {
+    "típus": "SzövegesKérdés",
+    "kérdés": "Mi a legközelebbi galaxis a Tejútrendszerhez?\n",
+    "válasz": "Androméda",
+    "regex": ""
+  },
+  {
+    "típus": "SzövegesKérdés",
+    "kérdés": "Milyen színű a legforróbb csillag?\n",
+    "válasz": "Kék",
+    "regex": ""
+  },
+  {
+    "típus": "SzövegesKérdés",
+    "kérdés": "Milyen színű a leghidegebb csillag?\n",
+    "válasz": "Vörös",
+    "regex": ""
+  },
+  {
+    "típus": "SzámosKérdés",
+    "kérdés": "Milyen messze van a Naprendszer széle a Naptól? (AU - csillagászati egyésgben)\n",
+    "válasz": 100000,
+    "regex": ""
+  },
+  {
+    "típus": "LebegőPontosKérdés",
+    "kérdés": "Milyen hosszú a Mars egy napja (földi órákban)?\n",
+    "válasz": 24.6,
+    "regex": ""
+  },
+  {
+    "típus": "SzövegesKérdés",
+    "kérdés": "Milyen elemből van a legtöbb a Földön?\n",
+    "válasz": "Oxigén",
+    "regex": ""
+  },
+  {
+    "típus": "SzövegesKérdés",
+    "kérdés": "Mi a legközelebbi bolygó a Naphoz?\n",
+    "válasz": "Merkúr",
+    "regex": ""
+  },
+  {
+    "típus": "SzövegesKérdés",
+    "kérdés": "Melyik a Naprendszer legnagyobb holdja?\n",
+    "válasz": "Ganymedes",
+    "regex": ""
+  },
+  {
+    "típus": "SzövegesKérdés",
+    "kérdés": "Milyen típusú csillag a Proxima Centauri?\n",
+    "válasz": "Vörös törpe",
+    "regex": ""
+  },
+  {
+    "típus": "SzövegesKérdés",
+    "kérdés": "Mi a legnagyobb ismert csillag?\n",
+    "válasz": "UY Scuti",
+    "regex": ""
+  },
+  {
+    "típus": "LebegőPontosKérdés",
+    "kérdés": "Milyen messze van az Androméda galaxis a Földtől? (fényévekben)\n",
+    "válasz": 2.537,
+    "regex": ""
+  },
+  {
+    "típus": "SzövegesKérdés",
+    "kérdés": "Melyik a legkisebb bolygó a Naprendszerben?\n",
+    "válasz": "Merkúr",
+    "regex": ""
+  },
+  {
+    "típus": "SzövegesKérdés",
+    "kérdés": "Milyen típusú csillag a Polaris?\n",
+    "válasz": "Változócsillag",
+    "regex": ""
+  },
+  {
+    "típus": "SzövegesKérdés",
+    "kérdés": "Milyen típusú csillag a Rigel?\n",
+    "válasz": "Kék szuperóriás",
+    "regex": ""
+  },
+  {
+    "típus": "SzövegesKérdés",
+    "kérdés": "Mi a legközelebbi bolygó a Földhöz?\n",
+    "válasz": "Vénusz",
+    "regex": ""
+  },
+  {
+    "típus": "SzámosKérdés",
+    "kérdés": "Mikor született Albert Einstein?\n",
+    "válasz": 1879,
+    "regex": ""
+  },
+  {
+    "típus": "SzámosKérdés",
+    "kérdés": "Hányszor nagyobb a Nap tömege a Föld tömegéhez képest?\n",
+    "válasz": 333000,
+    "regex": ""
+  },
+  {
+    "típus": "SzámosKérdés",
+    "kérdés": "Milyen hosszú a Szaturnuszon egy nap (földi órákban)?\n",
+    "válasz": 10.7,
+    "regex": ""
+  },
+  {
+    "típus": "SzámosKérdés",
+    "kérdés": "Mikor fedezték fel az Uránuszt?\n",
+    "válasz": 1781,
+    "regex": ""
+  },
+  {
+    "típus": "SzövegesKérdés",
+    "kérdés": "Milyen típusú galaxis a Tejútrendszer?\n",
+    "válasz": "Spirál",
+    "regex": ""
+  },
+  {
+    "típus": "SzövegesKérdés",
+    "kérdés": "Melyik csillagképnél található az Androméda galaxis?\n",
+    "válasz": "Cassiopeia",
+    "regex": "^(Cassiopeia|Kassziopeia)$"
+  },
+  {
+    "kérdés": "Hány éves a Világegyetem?",
+    "válasz": 13800000000,
+    "regex": ""
+  },
+  {
+    "kérdés": "Hány csillagkép van?",
+    "válasz": 88,
+    "regex": ""
+  },
+  {
+    "kérdés": "Melyik bolygón van hexagon alakú vihar?",
+    "válasz": "Szaturnusz",
+    "regex": ""
+  },
+  {
+    "kérdés": "Melyik bolygón van a legnagyobb óceán?",
+    "válasz": "Jupiter",
+    "regex": ""
+  },
+  {
+    "kérdés": "Melyik csillag az Alpha Ursa Minoris?",
+    "válasz": "Polaris",
+    "regex": ""
+  },
+  {
+    "kérdés": "Mennyi ideig tart minden évszak a Neptunuszon? (években)",
+    "válasz": 40,
+    "regex": ""
+  },
+  {
+    "kérdés": "Hogyan nevezik a fekete lyukat körülvevő korongot?",
+    "válasz": "Akkréció",
+    "regex": ""
+  },
+  {
+    "kérdés": "Hogyan nevezik a Nap által előállított viharokat?",
+    "válasz": "Napkitörés",
+    "regex": ""
+  },
+  {
+    "kérdés": "Melyik csillagkép ábrázol egy vadászt és fegyvereket?",
+    "válasz": "Orion",
+    "regex": ""
+  },
+  {
+    "kérdés": "Melyik bolygó a legforróbb a Naprendszerben?",
+    "válasz": "Vénusz",
+    "regex": ""
+  },
+  {
+    "kérdés": "Mi az az egyetlen bolygó, amely nem istenről kapta nevét?",
+    "válasz": "Föld",
+    "regex": ""
+  },
+  {
+    "kérdés": "Melyik űrhajós írta le lánya kezdőbetűit a Holdon?",
+    "válasz": "Gene Cernan",
+    "regex": ""
+  },
+  {
+    "kérdés": "Hogyan nevezik a csillagok, por és gáz nagy csoportját?",
+    "válasz": "Galaxis",
+    "regex": ""
+  },
+  {
+    "kérdés": "Hány csillag alkotja a Nagy Medvét?",
+    "válasz": 7,
+    "regex": ""
+  },
+  {
+    "kérdés": "Hol van a világegyetem leghidegebb helye?",
+    "válasz": "Boomerang-köd",
+    "regex": ""
+  },
+  {
+    "kérdés": "Mi a leggyakoribb galaxis típusa a világegyetemben?",
+    "válasz": "Elliptikus",
+    "regex": ""
+  },
+  {
+    "kérdés": "Mi a minimális sebessége egy meteoroidnak, amikor belép a Föld légkörébe? (km/s)",
+    "válasz": 11,
+    "regex": ""
+  },
+  {
+    "kérdés": "Mi a legnagyobb típusú csillag a világegyetemben?",
+    "válasz": "Vörös szuperóriás",
+    "regex": ""
+  },
+  {
+    "kérdés": "Melyik bolygók nem rendelkeznek természetes holdakkal?",
+    "válasz": "Merkúr",
+    "regex": ""
+  },
+  {
+    "kérdés": "Mi a leggyakoribb csillagtípus a Tejútban?",
+    "válasz": "Vörös törpe",
+    "regex": ""
+  },
+  {
+    "kérdés": "Mi van a Tejútgalaxis közepén?",
+    "válasz": "Fekete lyuk",
+    "regex": ""
+  },
+  {
+    "kérdés": "Ki volt az első női parancsnok az Nemzetközi Űrállomáson (ISS)?",
+    "válasz": "Peggy Whitson",
+    "regex": ""
+  },
+  {
+    "kérdés": "Mi az az egység, amelyet a világegyetem tágulásának leírására használnak?",
+    "válasz": "A Hubble állandó",
+    "regex": ""
+  },
+  {
+    "kérdés": "Ki volt a harmadik űrhajós, aki a Holdon sétált?",
+    "válasz": "Pete Conrad",
+    "regex": ""
+  },
+  {
+    "kérdés": "Hány Föld férne be a Napba?",
+    "válasz": 1000000,
+    "regex": ""
+  },
+  {
+    "kérdés": "Ki írta le Szaturnusz gyűrűit \"egy teáscsésze füleiként\"?",
+    "válasz": "Galilei",
+    "regex": ""
+  },
+  {
+    "kérdés": "Hány nap alatt kerüli meg a Hold a Földet?",
+    "válasz":  27.3,
+    "regex": ""
+  },
+  {
+    "kérdés": "Hány nap alatt halad át a Hold az összes fázisán?",
+    "válasz": 29.5,
+    "regex": ""
+  },
+  {
+    "kérdés": "Miben mérik a Nap és a Föld közti távolságot?",
+    "válasz": "Csillagászati egység",
+    "regex": ""
+  },
+  {
+    "kérdés": "Melyik bolygót nevezik a Reggeli Csillagnak?",
+    "válasz": "Vénusz",
+    "regex": ""
+  },
+  {
+    "kérdés": "Melyik asztrológiai jegy lesz látható január 21-től?",
+    "válasz": "Vízöntő",
+    "regex": ""
+  },
+  {
+    "kérdés": "Hogyan nevezik az űrben egy égitest által megtett útvonalat?",
+    "válasz": "Pálya",
+    "regex": ""
+  },
+  {
+    "kérdés": "Hogyan nevezzük a Nap legkülső légkörét?",
+    "válasz": "Korona",
+    "regex": ""
+  },
+  {
+    "kérdés": "Mi okozza a Hold fénylését?",
+    "válasz": "Napfény",
+    "regex": ""
+  },
+  {
+    "kérdés": "Melyik csillagkép hasonlít egy szárnyas lóra?",
+    "válasz": "Pegasus",
+    "regex": ""
+  },
+  {
+    "kérdés": "Mi a harmadik legfényesebb égitest az égen?",
+    "válasz": "Vénusz",
+    "regex": ""
+  },
+  {
+    "kérdés": "Melyik csillagkép tartalmazza a Castor és Pollux csillagokat?",
+    "válasz": "Ikrek",
+    "regex": ""
+  },
+  {
+    "kérdés": "Nevezd meg azt a űrhajót, amely elvitte az első űrhajósokat a Holdra",
+    "válasz": "Apollo 11",
+    "regex": ""
+  },
+  {
+    "kérdés": "Melyik bolygót nevezik az Esti Csillagnak?",
+    "válasz": "Vénusz",
+    "regex": ""
+  },
+  {
+    "kérdés": "Ki találta fel a csillagászatot?",
+    "válasz": "Görögök",
+    "regex": ""
+  },
+  {
+    "kérdés": "Milyen színű a Mars naplementéje?",
+    "válasz": "Kék",
+    "regex": ""
+  },
+  {
+    "kérdés": "Mennyi a Nap magjának hőmérséklete?",
+    "válasz": "15 millió",
+    "regex": ""
+  },
+  {
+    "kérdés": "Mennyi ideig tart egy nap a Jupiteren?",
+    "válasz": "10 óra",
+    "regex": ""
+  },
+  {
+    "kérdés": "Melyik a legkisebb bolygó a Naprendszerünkben?",
+    "válasz": "Merkúr",
+    "regex": ""
+  },
+  {
+    "kérdés": "Melyik a legidősebb bolygó a Naprendszerünkben?",
+    "válasz": "Jupiter",
+    "regex": ""
+  },
+  {
+    "kérdés": "Melyik bolygó nagyobb, Neptunusz vagy Szaturnusz?",
+    "válasz": "Szaturnusz",
+    "regex": ""
+  },
+  {
+    "kérdés": "Mennyi ideig tart egy év a Jupiteren?",
+    "válasz": 12,
+    "regex": ""
+  },
+  {
+    "kérdés": "Hány vulkán van a Vénusz felszínén?",
+    "válasz": 1600,
+    "regex": ""
+  },
+  {
+    "kérdés": "Milyen színű a Szaturnusz?",
+    "válasz": "Sárga",
+    "regex": ""
+  },
+  {
+    "kérdés": "Melyik bolygó forog oldalára?",
+    "válasz": "Uránusz",
+    "regex": ""
+  },
+  {
+    "kérdés": "Mely évben lett újra osztályozva törpebolygóként a Plútó?",
+    "válasz": "2006",
+    "regex": ""
+  },
+  {
+    "kérdés": "Mi a második legkisebb bolygó a Naprendszerünkben?",
+    "válasz": "Mars",
+    "regex": ""
+  },
+  {
+    "kérdés": "Melyik bolygó forog hátrafelé a többiekhez képest?",
+    "válasz": "Vénusz",
+    "regex": ""
+  },
+  {
+    "kérdés": "Melyik bolygón van a legtöbb vulkán?",
+    "válasz": "Vénusz",
+    "regex": ""
+  },
+  {
+    "kérdés": "Mi védi meg a Földet a meteoroidoktól és a nap sugárzásától?",
+    "válasz": "Atmoszféra",
+    "regex": ""
+  },
+  {
+    "kérdés": "Mi a legfényesebb bolygó az éjszakai égbolton?",
+    "válasz": "Vénusz",
+    "regex": ""
+  },
+  {
+    "kérdés": "Miből áll egy üstökös?",
+    "válasz": "Jeges",
+    "regex": ""
+  },
+  {
+    "kérdés": "Ki volt az első nő, aki űrbe utazott?",
+    "válasz": "Tereshkova",
+    "regex": ""
+  },
+  {
+    "kérdés": "Milyen jelenség tartja a bolygókat egyenletes pályán a Nap körül?",
+    "válasz": "Gravitáció",
+    "regex": ""
+  },
+  {
+    "kérdés": "Ki volt az első ember a Holdon?",
+    "válasz": "Neil Armstrong",
+    "regex": ""
+  },
+  {
+  "kérdés": "Ha 90 kilogrammot nyomnál a Földön, hány kilogrammot nyomnál a Marson?",
+  "válasz": 34,
+  "regex": ""
+  },
+  {
+  "kérdés": "Ki volt az első ember az űrben?",
+  "válasz": "Juri Gagarin",
+  "regex": ""
+  },
+  {
+  "kérdés": "A bolygók hány százalékát teszik ki a Naprendszerünk tömegének?",
+  "válasz": 0.135,
+  "regex": ""
+  },
+  {
+  "kérdés": "Mennyi idő alatt ér el a Nap sugara a Földhöz? (percekben)",
+  "válasz": 8,
+  "regex": ""
+  },
+  {
+  "kérdés": "Hány bolygó van a Naprendszerben?",
+  "válasz": 8,
+  "regex": ""
+  },
+  {
+  "kérdés": "Miből a Nap legfőbb alkotóeleme?",
+  "válasz": "Hidrogén",
+  "regex": ""
+  },
+  {
+  "kérdés": "Körülbelül hány kilométer van egy fényévben?",
+  "válasz": "9,5 milliárd",
+  "regex": ""
+  },
+  {
+  "kérdés": "Mikor kezdődött a Űrkorszak?",
+  "válasz": "1957-10-04",
+  "regex": ""
+  },
+  {
+  "kérdés": "Melyik Hold kering Saturnusz körül?",
+  "válasz": "Titan",
+  "regex": ""
+  },
+  {
+  "kérdés": "Milyen színű a Nap?",
+  "válasz": "A Nap szemmel nézve fehérnek látszik, de valójában minden szín keveréke",
+  "regex": ""
+  },
+  {
+  "kérdés": "Mivel nevezik az aszteroidákat még?",
+  "válasz": "Kisbolygók vagy planetoideák",
+  "regex": ""
+  },
+  {
+  "kérdés": "Hogyan nevezzük a Napból származó nagy mennyiségű plazmafelszabadulást?",
+  "válasz": "Koronális tömegkitörés",
+  "regex": ""
+  },
+  {
+  "kérdés": "Mi az erősen mágneses, forgó neutroncsillag?",
+  "válasz": "Pulzár",
+  "regex": ""
+  },
+  {
+  "kérdés": "Hogyan nevezzük a meteoroidok nagy számban és ugyanabban az időben történő előfordulását?",
+  "válasz": "Meteorraj",
+  "regex": ""
+  },
+  {
+  "kérdés": "Milyen égitest Vesta?",
+  "válasz": "Egy aszteroida",
+  "regex": ""
+  },
+  {
+  "kérdés": "Mi okozza az árapályokat?",
+  "válasz": "A gravitáció (főleg a Hold hatására)",
+  "regex": ""
+  },
+  {
+  "kérdés": "Mi az a naptevések polaritásfordulata?",
+  "válasz": "A napciklus",
+  "regex": ""
+  },
+  {
+  "kérdés": "Nevezd meg a három legismertebb aszteroidát?",
+  "válasz": "Ceres, Pallas, Vesta",
+  "regex": ""
+  },
+  {
+  "kérdés": "Miért van kráterekkel borítva a Merkúr?",
+  "válasz": "Az atmoszférája túl vékony ahhoz, hogy megégetje a meteoroidákat",
+  "regex": ""
+  },
+  {
+  "kérdés": "Mennyi idős a Nap?",
+  "válasz": "Körülbelül 4,6 milliárd év",
+  "regex": ""
+  },
+  {
+  "kérdés": "Melyik a legnagyobb csillag a Naprendszerünkben?",
+  "válasz": "A Nap",
+  "regex": ""
+  },
+  {
+  "kérdés": "Mi a neve a Plútó legnagyobb holdjának?",
+  "válasz": "Charon",
+  "regex": ""
+  },
+  {
+  "kérdés": "Mi okozza a napfogyatkozást?",
+  "válasz": "A Hold mozog a Nap és a Föld közé, árnyékot vetve a Földre",
+  "regex": ""
+  },
+  {
+  "kérdés": "Hol található a bioszféra?",
+  "válasz": "Az atmoszféra alsó részében, a hidroszféra összes részében és a litoszféra felső részében",
+  "regex": ""
+  },
+  {
+  "kérdés": "Az üstökösök három fő része a mag, a farka és a _____?",
+  "válasz": "Koma",
+  "regex": ""
+  },
+  {
+  "kérdés": "Melyik égitest a Naprendszerben rendelkezik a legtöbb tömeggel?",
+  "válasz": "A Nap",
+  "regex": ""
+  },
+  {
+  "kérdés": "Melyik év dicsekedett az első nővel az űrben?",
+  "válasz": "1963",
+  "regex": ""
+  },
+  {
+  "kérdés": "Mi a neve annak az állapotnak, amikor három égitest egyenes vonalban helyezkedik el?",
+  "válasz": "Szüzi",
+  "regex": ""
+  },
+  {
+  "kérdés": "Mennyi holdja van a Földnek?",
+  "válasz": "Egy",
+  "regex": ""
+  },
+  {
+  "kérdés": "Melyik emberek által vezetett amerikai űrprogram végül 12 embert küldött a Holdra?",
+  "válasz": "Apollo",
+  "regex": ""
+  },
+  {
+  "kérdés": "1978-tól 1999-ig melyik bolygó volt a legtávolabbi a Naptól?",
+  "válasz": "Neptunusz",
+  "regex": ""
+  },
+  {
+  "kérdés": "Hány százaléka látható a Tejútnak?",
+  "válasz": "Csak 0,000003%-át",
+  "regex": ""
+  },
+  {
+  "kérdés": "Milyen kifejezést használnak az asztronómiai szakemberek a két évszakban, amikor a nap és az éjszaka egyenlő hosszúságúak?",
+  "válasz": "Egyenlítő",
+  "regex": ""
+  },
+  {
+  "kérdés": "Mi az a felhők az interstelláris gáz és por, amelyek különböző színekben sugároznak?",
+  "válasz": "Emissziós ködök",
+  "regex": ""
+  },
+  {
+  "kérdés": "A Mars légköre túlnyomórészt miből áll?",
+  "válasz": "Szén-dioxidból",
+  "regex": ""
+  },
+  {
+  "kérdés": "Milyen színű a Mars naplementéje?",
+  "válasz": "Kék",
+  "regex": ""
+  },
+  {
+  "kérdés": "Melyik bolygóhoz történt több küldetés, mint bármely másik bolygóhoz?",
+  "válasz": "Mars",
+  "regex": ""
+  },
+  {
+  "kérdés": "Az Uránusz csak a következő szonda által látogatható:",
+  "válasz": "Voyager 2",
+  "regex": ""
+  }
+]
