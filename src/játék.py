@@ -4,6 +4,7 @@ import json
 import random
 import datetime
 import unidecode
+from src import naplo_stat
 from abc import ABC, abstractmethod
 from difflib import SequenceMatcher
 
@@ -18,6 +19,7 @@ class Kérdés(ABC):
     helytelen_válaszok_száma = 0
     részleges_válaszok_száma = 0
     tolerancia = 0.1
+    életpont = 3
 
     def __init__(self, kérdés, helyes_válasz):
         self.kérdés = kérdés
@@ -69,6 +71,10 @@ class Kérdés(ABC):
     def _helytelen_válasz_számláló() -> None:
         Kérdés.helytelen_válaszok_száma += 1
 
+    @staticmethod
+    def _élet_vesztés() -> None:
+        Kérdés.életpont -= 1
+
     @abstractmethod
     def _választ_kiértékel(self, kérdés_feltétele) -> (bool, str):
         pass
@@ -100,6 +106,7 @@ class SzámosKérdés(Kérdés):
                 return False, 'Majdnem jó, ám az eltérés 40% alatt van ezért kapsz 1 plusz pontott.'
             else:
                 Kérdés._helytelen_válasz_számláló()
+                Kérdés._élet_vesztés()
                 return False, f'Nem jó. A válasz {str(self.helyes_válasz)} lett volna!'
 
 
@@ -127,6 +134,7 @@ class SzövegesKérdés(Kérdés):
                 return False, 'Kapsz ezért kapsz 3 plusz pontott.'
             else:
                 Kérdés._helytelen_válasz_számláló()
+                Kérdés._élet_vesztés()
                 return False, f'Nem helyes! A válasz {self.helyes_válasz if (self.minta == "") else self.minta[2:-2]}' \
                               f' lett volna!'
 
@@ -146,6 +154,7 @@ class LebegőPontosKérdés(Kérdés):
                 return True, 'Plusz 3 pont'
             else:
                 Kérdés._helytelen_válasz_számláló()
+                Kérdés._élet_vesztés()
                 return False, f'Nem jó. A válasz {str(self.helyes_válasz)} lett volna!'
 
 
@@ -166,21 +175,16 @@ class DátumKérdés(Kérdés):
             return False, 'Kapsz ezért kapsz 3 plusz pontott.'
         else:
             Kérdés._helytelen_válasz_számláló()
+            Kérdés._élet_vesztés()
             return False, f'A válasz helytelen. A helyes válasz {dátum_helyes_válasz} lett volna!'
 
 
-def játék_kezdése():
-    játékos_fájlnév = os.getcwd() + '\log\játékos.json'
+def játék_kezdése(játékos_neve):
     Kérdés.pontszám = 0
     Kérdés.kérdések_száma = 0
-
-    if os.path.isfile(játékos_fájlnév):
-        with open(játékos_fájlnév, encoding='UTF-8') as játékos_fájl:
-            játékos_adatok_json = json.load(játékos_fájl)
-
-    print(f'Játékos: {játékos_adatok_json[0]['jatekos_neve']}' + (' ' * (23 - len(játékos_adatok_json[0]['jatekos_neve']))) + f'Pontszám: {Kérdés.pontszám:04d}')
-
     kérdések_és_helyes_válaszok = []
+
+    statisztika.log(játékos_neve, Kérdés.pontszám)
 
     # Kérdések fájl beolvasása
     kérdések_fájlnév = os.getcwd() + '\json\kérdések_és_helyes_válaszok.json'
@@ -201,7 +205,7 @@ def játék_kezdése():
             kérdések_és_helyes_válaszok.append(LebegőPontosKérdés(khv['kérdés'], khv['válasz']))
 
     try:
-        for i in range(1, 3):
+        while Kérdés.életpont:
             Kérdés.kérdések_száma += 1
             random.choice(kérdések_és_helyes_válaszok).kérdés_feltesz()
 
@@ -225,6 +229,7 @@ def játék_kezdése():
         print(f'Helytelen válaszok száma: {Kérdés.helytelen_válaszok_száma}')
         print(f'Pontszám: {Kérdés.kérdések_száma * 5} / {Kérdés.pontszám}')
 
+        statisztika.log_pontszám_frissit(Kérdés.pontszám)
 
     except FileNotFoundError as FNFE:
         print(f'A {FNFE.filename} nevü fájl hiányzik!')

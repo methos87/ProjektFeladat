@@ -1,5 +1,8 @@
-﻿def bevezető():
-    cím = '*'+ (' ' * 15) + 'ASZTRO AKADÉMIA' + (' ' * 15) + '*'
+﻿import time
+
+
+def bevezető():
+    cím = '*' + (' ' * 15) + 'ASZTRO AKADÉMIA' + (' ' * 15) + '*'
     print('*' * len(cím))
     print('*' + (' ' * 45) + '*')
     print(cím)
@@ -12,4 +15,16 @@
     print(('-' * vonalak_hossza) + ' ' + készítette + ', ' + dátum + ' ' + ('-' * vonalak_hossza))
 
 
+def gépelés(szöveg):
+    print('\r')
+    for i in szöveg:
+        print(i, end='', flush=True)
+        time.sleep(0.035)
+    time.sleep(0.5)
+    return ''
 
+
+def segítség():
+    print('\n')
+    print('Ez a segitség kiiratása')
+    print('Munkálat alatt...')

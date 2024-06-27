@@ -1,1 +1,87 @@
-[{"jatekos_neve": "Akos", "datum": "2024-06-26 08:39:26.856141", "pontszam": 0}]
+[
+    {
+        "jatekos_neve": "Akos",
+        "datum": "2024-06-27 08:00:05.511768",
+        "pontszam": 5
+    },
+    {
+        "jatekos_neve": "Akos",
+        "datum": "2024-06-27 00:04:02.198268",
+        "pontszam": 0
+    },
+    {
+        "jatekos_neve": "Akos",
+        "datum": "2024-06-27 00:06:01.055870",
+        "pontszam": 3
+    },
+    {
+        "jatekos_neve": "Akos",
+        "datum": "2024-06-27 00:15:51.652264",
+        "pontszam": 5
+    },
+    {
+        "jatekos_neve": "Akos",
+        "datum": "2024-06-27 07:54:56.227915",
+        "pontszam": 5
+    },
+    {
+        "jatekos_neve": "Akos",
+        "datum": "2024-06-27 07:55:41.652488",
+        "pontszam": 5
+    },
+    {
+        "jatekos_neve": "B\u00e9la",
+        "datum": "2024-06-27 07:58:54.190910",
+        "pontszam": 0
+    },
+    {
+        "jatekos_neve": "Tam\u00e1s",
+        "datum": "2024-06-27 08:06:18.907881",
+        "pontszam": 0
+    },
+    {
+        "jatekos_neve": "Tam\u00e1s",
+        "datum": "2024-06-27 08:06:52.230867",
+        "pontszam": 0
+    },
+    {
+        "jatekos_neve": "Akos",
+        "datum": "2024-06-27 08:09:11.923113",
+        "pontszam": 0
+    },
+    {
+        "jatekos_neve": "Akos",
+        "datum": "2024-06-27 08:09:29.838635",
+        "pontszam": 0
+    },
+    {
+        "jatekos_neve": "Akos",
+        "datum": "2024-06-27 08:09:48.372040",
+        "pontszam": 5
+    },
+    {
+        "jatekos_neve": "Valentin",
+        "datum": "2024-06-27 08:13:01.813938",
+        "pontszam": 9
+    },
+    {
+        "jatekos_neve": "Valentin",
+        "datum": "2024-06-27 08:13:41.709621",
+        "pontszam": 5
+    },
+    {
+        "jatekos_neve": "Aron",
+        "datum": "2024-06-27 08:17:06.189099",
+        "pontszam": 5
+    },
+    {
+        "jatekos_neve": "Robert",
+        "datum": "2024-06-27 08:34:21.559961",
+        "pontszam": 5
+    },
+    {
+        "jatekos_neve": "Kornel",
+        "datum": "2024-06-27 08:35:56.157424",
+        "pontszam": 5
+    }
+]
