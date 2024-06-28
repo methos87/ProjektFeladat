@@ -1,9 +1,11 @@
-﻿import re
+import re
 import os
 import json
+import time
 import random
 import datetime
 import unidecode
+from src import eszközök
 from src import naplo_stat
 from abc import ABC, abstractmethod
 from difflib import SequenceMatcher
@@ -42,14 +44,14 @@ class Kérdés(ABC):
                 kérdés_feltétele = input(self.kérdés)
                 helyes_e, információ = self._választ_kiértékel(kérdés_feltétele)
                 if helyes_e:
-                    print(f'A válasz helyes! {információ}')
+                   eszközök.gépelés(f'A válasz helyes! {információ}')
                 else:
-                    print(f'{információ}')
+                    eszközök.gépelés(f'{információ}')
                 break
             except ValueError:
-                print(f'Nem megfelelő adattípust adtál meg. Kérlek, próbáld újra!')
+                eszközök.gépelés(f'Nem megfelelő adattípust adtál meg. Kérlek, próbáld újra!')
             except Exception as E:
-                print(f'Hiba: {E}')
+                eszközök.gépelés(f'Hiba: {E}')
 
     @staticmethod
     def egyszerüsit(szöveg) -> str:
@@ -91,19 +93,23 @@ class SzámosKérdés(Kérdés):
             if 0 <= pontosság <= 10:
                 Kérdés._pontszám_számláló(4)
                 Kérdés._részleges_válaszok_számláló()
-                return False, 'Majdnem jó, ám az eltérés 10% alatt van ezért kapsz 4 plusz pontott.'
+                return False, ('Majdnem jó, ám az eltérés 10% alatt van ezért kapsz 4 plusz pontott.\n' +
+                        f'A válasz {str(self.helyes_válasz)} lett volna!')
             elif 10 < pontosság <= 20:
                 Kérdés._pontszám_számláló(3)
                 Kérdés._részleges_válaszok_számláló()
-                return False, 'Majdnem jó, ám az eltérés 20% alatt van ezért kapsz 3 plusz pontott.'
+                return False, ('Majdnem jó, ám az eltérés 20% alatt van ezért kapsz 3 plusz pontott.' +
+                        f'A válasz {str(self.helyes_válasz)} lett volna!')
             elif 20 < pontosság <= 30:
                 Kérdés._pontszám_számláló(2)
                 Kérdés._részleges_válaszok_számláló()
-                return False, 'Majdnem jó, ám az eltérés 30% alatt van ezért kapsz 2 plusz pontott.'
+                return False, ('Majdnem jó, ám az eltérés 30% alatt van ezért kapsz 2 plusz pontott.' +
+                        f'A válasz {str(self.helyes_válasz)} lett volna!')
             elif 30 < pontosság <= 40:
                 Kérdés._pontszám_számláló(1)
                 Kérdés._részleges_válaszok_számláló()
-                return False, 'Majdnem jó, ám az eltérés 40% alatt van ezért kapsz 1 plusz pontott.'
+                return False, ('Majdnem jó, ám az eltérés 40% alatt van ezért kapsz 1 plusz pontott.' +
+                        f'A válasz {str(self.helyes_válasz)} lett volna!')
             else:
                 Kérdés._helytelen_válasz_számláló()
                 Kérdés._élet_vesztés()
@@ -183,11 +189,15 @@ def játék_kezdése(játékos_neve):
     Kérdés.pontszám = 0
     Kérdés.kérdések_száma = 0
     kérdések_és_helyes_válaszok = []
+    kérdések_fájlnév = 'json/kérdések_és_helyes_válaszok.json'
+    játékos_fájlnév = 'log/játékos.json'
+    naplo_stat.naplo(játékos_neve, Kérdés.pontszám)
 
-    statisztika.log(játékos_neve, Kérdés.pontszám)
+    if os.path.isfile(játékos_fájlnév):
+        with open(játékos_fájlnév, encoding='UTF-8') as játékos_fájl:
+            játékos_adatok_json = json.load(játékos_fájl)
 
     # Kérdések fájl beolvasása
-    kérdések_fájlnév = os.getcwd() + '\json\kérdések_és_helyes_válaszok.json'
     if os.path.isfile(kérdések_fájlnév):
         with open(kérdések_fájlnév, encoding='UTF-8') as kérdés_fájl:
             kérdések_és_helyes_válaszok_json = json.load(kérdés_fájl)
@@ -206,8 +216,18 @@ def játék_kezdése(játékos_neve):
 
     try:
         while Kérdés.életpont:
+            eszközök.clr()
+            eszközök.bevezető()
             Kérdés.kérdések_száma += 1
+
+            print(f"Játékos: {játékos_adatok_json[-1]['jatekos_neve']}" +
+                  (" " * (12 - len(játékos_adatok_json[-1]['jatekos_neve']))) +
+                  f"élet   {'*' * Kérdés.életpont}" + (" " * (5 - Kérdés.életpont)) +
+                  f"pontszám: {Kérdés.pontszám:04d}"
+                  )
+
             random.choice(kérdések_és_helyes_válaszok).kérdés_feltesz()
+            time.sleep(1)
 
         eredmény = int(100 * Kérdés.pontszám / 45)
 
@@ -222,14 +242,15 @@ def játék_kezdése(játékos_neve):
 
         print('\n')
 
-        print('EREDMÉNYED')
+        print('A JÁTÉK EREDMÉNYED')
         print(f'Kérdések száma: {Kérdés.kérdések_száma}')
         print(f'Helyes válaszok száma: {Kérdés.helyes_válaszok_száma}')
         print(f'Részleges válaszok száma: {Kérdés.részleges_válaszok_száma}')
         print(f'Helytelen válaszok száma: {Kérdés.helytelen_válaszok_száma}')
         print(f'Pontszám: {Kérdés.kérdések_száma * 5} / {Kérdés.pontszám}')
 
-        statisztika.log_pontszám_frissit(Kérdés.pontszám)
+        naplo_stat.naplo_pontszám_frissit(Kérdés.pontszám)
+        Kérdés.életpont = 3
 
     except FileNotFoundError as FNFE:
         print(f'A {FNFE.filename} nevü fájl hiányzik!')

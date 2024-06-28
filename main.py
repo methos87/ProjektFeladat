@@ -1,19 +1,13 @@
-import os
 import time
 from src import játék
 from src import naplo_stat
-from src import szövegek
+from src import eszközök
 
 
-def clr():
-    os.system('cls' if os.name == 'nt' else 'clear')
-
-
-def fő_menü(játékos_neve):
-    menü_elemek = ['Kvíz indítása', 'Statisztika', 'Segítség', 'Kilépés']
+def fő_menü(játékosneve):
+    menü_elemek = ['Új játék', 'Statisztika', 'Segítség', 'Kilépés']
     while True:
-        print('\n')
-        print(szövegek.gépelés('Válasz az alábbi lehetőségekből: \n'))
+        print(eszközök.gépelés('Válasz az alábbi lehetőségekből: \n'))
         for elem in menü_elemek:
             time.sleep(0.5)
             print(menü_elemek.index(elem) + 1, f'- {elem}')
@@ -21,37 +15,40 @@ def fő_menü(játékos_neve):
         fő_menü_választ = input()
         match fő_menü_választ:
             case '1':
-                clr()
-                szövegek.bevezető()
-                játék.játék_kezdése(játékos_neve)
+                eszközök.clr()
+                eszközök.bevezető()
+                játék.játék_kezdése(játékosneve)
             case '2':
-                clr()
-                szövegek.bevezető()
-                statisztika.statisztika()
+                eszközök.clr()
+                eszközök.bevezető()
+                naplo_stat.statisztika()
             case '3':
-                clr()
-                szövegek.bevezető()
-                szövegek.segítség()
+                eszközök.clr()
+                eszközök.bevezető()
+                eszközök.segítség()
             case '4':
-                clr()
+                eszközök.clr()
                 print('Kiléptél a játékból!')
                 quit()
             case _:
                 continue
 
 
-if __name__ == '__main__':
-
-    clr()
-    szövegek.bevezető()
+def indit(*args, **kwargs):
+    eszközök.clr()
+    eszközök.bevezető()
 
     while True:
-        játékos_neve = input(szövegek.gépelés('\nKérlek add meg a neved: '))
-        if len(játékos_neve) <= 24:
+        játékos_neve = input(eszközök.gépelés('\nKérlek add meg a neved: '))
+        if len(játékos_neve) <= 10:
 
-            szövegek.gépelés(f'Üdv {játékos_neve} a kvíz játékban!')
+            eszközök.gépelés(f'Üdv {játékos_neve} a kvíz játékban!')
             break
         else:
-            szövegek.gépelés('Túl hosszú nevet adtál meg!')
+            eszközök.gépelés('Kérlek maximum 10 karakter hosszú nevet adj meg.')
 
     fő_menü(játékos_neve)
+
+
+if __name__ == '__main__':
+    indit()

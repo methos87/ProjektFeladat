@@ -1,4 +1,5 @@
-﻿import time
+﻿import os
+import time
 
 
 def bevezető():
@@ -28,3 +29,7 @@ def segítség():
     print('\n')
     print('Ez a segitség kiiratása')
     print('Munkálat alatt...')
+
+
+def clr():
+    os.system('cls' if os.name == 'nt' else 'clear')

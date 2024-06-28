@@ -4,23 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eec1bf7b-e8c0-4430-86cd-5a64e437827f" name="Changes" comment="Első feltöltés">
-      <change afterPath="$PROJECT_DIR$/src/naplo_stat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="eec1bf7b-e8c0-4430-86cd-5a64e437827f" name="Changes" comment="2024-06-28 - Feltöltés">
+      <change beforePath="$PROJECT_DIR$/.idea/10 Projekt Feladat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/10 Projekt Feladat.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/json/kérdések_és_helyes_válaszok.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/kérdések_és_helyes_válaszok.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/kérdések_és_helyes_válaszok_régi.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/log/játékos.json" beforeDir="false" afterPath="$PROJECT_DIR$/log/játékos.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bevezető.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ismédlődő.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/játék.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/játék.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/statisztika.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/szöveg_kiirás.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/szövegek.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/naplo_stat.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/naplo_stat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/szövegek.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/eszközök.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,7 +40,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/methos87/ProjektFeladat.git&quot;,
-    &quot;accountId&quot;: &quot;a905bf25-9e8d-4b51-a340-25654637ed18&quot;
+    &quot;accountId&quot;: &quot;13de4bcc-f4fb-40f7-9482-bee537315aa4&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -48,14 +54,19 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for teszt_kviz.TesztKvíz.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for teszt_kviz.teszt_kvíz.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in teszt_kviz.py.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.teszt_kviz.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/private/PycharmProjects/Cubixedu/01 Python alapok/10 Projekt Feladat&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/private/PycharmProjects/Projekt Feladat&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="10 Projekt Feladat" />
       <option name="ENV_FILES" value="" />
@@ -78,9 +89,80 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="teszt_kviz" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="10 Projekt Feladat" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tesztek" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tesztek/teszt_kviz.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for teszt_kviz.TesztKvíz" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="10 Projekt Feladat" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tesztek" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;teszt_kviz.TesztKvíz&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for teszt_kviz.teszt_kvíz" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="10 Projekt Feladat" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tesztek" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;teszt_kviz.teszt_kvíz&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in teszt_kviz.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="10 Projekt Feladat" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tesztek" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tesztek/teszt_kviz.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python tests.Python tests in teszt_kviz.py" />
+        <item itemvalue="Python tests.Python tests for teszt_kviz.TesztKvíz" />
+        <item itemvalue="Python tests.Python tests for teszt_kviz.teszt_kvíz" />
+        <item itemvalue="Python.teszt_kviz" />
       </list>
     </recent_temporary>
   </component>
@@ -124,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719384086203</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2024-06-27 - Feltöltés">
+      <option name="closed" value="true" />
+      <created>1719470861636</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719470861636</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +234,8 @@
     </ignored-roots>
     <MESSAGE value="Javítás a mainben (próba feltöltés)" />
     <MESSAGE value="Első feltöltés" />
-    <option name="LAST_COMMIT_MESSAGE" value="Első feltöltés" />
+    <MESSAGE value="2024-06-27 - Feltöltés" />
+    <MESSAGE value="2024-06-28 - Feltöltés" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024-06-28 - Feltöltés" />
   </component>
 </project>

@@ -504,18 +504,6 @@
     "regex": ""
   },
   {
-    "típus": "SzámosKérdés",
-    "kérdés": "Hány fényév távolságra van az Antares a Földtől?\n",
-    "válasz": 550,
-    "regex": ""
-  },
-  {
-    "típus": "SzövegesKérdés",
-    "kérdés": "Melyik bolygó rendelkezik a leggyorsabb forgási sebességgel?\n",
-    "válasz": "Jupiter",
-    "regex": ""
-  },
-  {
     "típus": "SzövegesKérdés",
     "kérdés": "Melyik bolygó rendelkezik a legnagyobb hőmérséklet-különbséggel?\n",
     "válasz": "Merkúr",
@@ -529,20 +517,8 @@
   },
   {
     "típus": "SzámosKérdés",
-    "kérdés": "Milyen messze van a Mars a Földtől? (millió kilométerben)\n",
-    "válasz": 225,
-    "regex": ""
-  },
-  {
-    "típus": "SzámosKérdés",
     "kérdés": "Hány holdja van az Uránusznak?\n",
     "válasz": 27,
-    "regex": ""
-  },
-  {
-    "típus": "SzámosKérdés",
-    "kérdés": "Mennyi a Nap sugárzási teljesítménye (watts)?\n",
-    "válasz": 3.828e26,
     "regex": ""
   },
   {
@@ -558,27 +534,9 @@
     "regex": ""
   },
   {
-    "típus": "SzövegesKérdés",
-    "kérdés": "Melyik bolygó rendelkezik a legnagyobb szélsebességgel?\n",
-    "válasz": "Neptunusz",
-    "regex": ""
-  },
-  {
     "típus": "SzámosKérdés",
     "kérdés": "Mikor fedezték fel a Neptunusz gyűrűit?\n",
     "válasz": 1984,
-    "regex": ""
-  },
-  {
-    "típus": "SzámosKérdés",
-    "kérdés": "Hány fényév távolságra van a Proxima Centauri a Földtől?\n",
-    "válasz": 4.24,
-    "regex": ""
-  },
-  {
-    "típus": "SzámosKérdés",
-    "kérdés": "Hány fényév távolságra van az Alfa Centauri a Földtől?\n",
-    "válasz": 4.37,
     "regex": ""
   },
   {
@@ -643,7 +601,7 @@
   },
   {
     "típus": "SzövegesKérdés",
-    "kérdés": "Melyik a legfényesebb csillag az égen?\n",
+    "kérdés": "Melyik a legfényesebb csillag az éjszakai égbolton?\n",
     "válasz": "Sirius",
     "regex": ""
   },
@@ -651,12 +609,6 @@
     "típus": "SzámosKérdés",
     "kérdés": "Hány fényév távolságra van a Vega a Földtől?\n",
     "válasz": 25.3,
-    "regex": ""
-  },
-  {
-    "típus": "SzámosKérdés",
-    "kérdés": "Mennyi a Nap hőmérséklete (Kelvin fokban)?\n",
-    "válasz": 5778,
     "regex": ""
   },
   {
@@ -696,27 +648,9 @@
     "regex": ""
   },
   {
-    "típus": "SzövegesKérdés",
-    "kérdés": "Melyik bolygó rendelkezik a legnagyobb hőmérséklet-különbséggel?\n",
-    "válasz": "Merkúr",
-    "regex": ""
-  },
-  {
-    "típus": "SzövegesKérdés",
-    "kérdés": "Melyik bolygón található az Olympus Mons?\n",
-    "válasz": "Mars",
-    "regex": ""
-  },
-  {
     "típus": "SzámosKérdés",
     "kérdés": "Milyen messze van a Mars a Földtől? (millió kilométerben)\n",
     "válasz": 225,
-    "regex": ""
-  },
-  {
-    "típus": "SzámosKérdés",
-    "kérdés": "Hány holdja van az Uránusznak?\n",
-    "válasz": 27,
     "regex": ""
   },
   {
@@ -729,12 +663,6 @@
     "típus": "SzövegesKérdés",
     "kérdés": "Melyik bolygó rendelkezik a legnagyobb mágneses térrel?\n",
     "válasz": "Jupiter",
-    "regex": ""
-  },
-  {
-    "típus": "SzámosKérdés",
-    "kérdés": "Milyen messze van a Jupiter a Földtől? (millió kilométerben)\n",
-    "válasz": 778,
     "regex": ""
   },
   {
@@ -756,14 +684,8 @@
     "regex": ""
   },
   {
-    "típus": "SzámosKérdés",
-    "kérdés": "Hány fényév távolságra van az Alfa Centauri a Földtől?\n",
-    "válasz": 4.37,
-    "regex": ""
-  },
-  {
     "típus": "SzövegesKérdés",
-    "kérdés": "Melyik bolygó rendelkezik a legnagyobb vulkáni tevékenységgel?\n",
+    "kérdés": "Melyik égitest rendelkezik a legnagyobb vulkáni tevékenységgel?\n",
     "válasz": "Io",
     "regex": ""
   },
