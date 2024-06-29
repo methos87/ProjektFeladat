@@ -324,12 +324,6 @@
     "regex": ""
   },
   {
-    "típus": "SzövegesKérdés",
-    "kérdés": "Mi a legnagyobb ismert csillag?\n",
-    "válasz": "UY Scuti",
-    "regex": ""
-  },
-  {
     "típus": "SzámosKérdés",
     "kérdés": "Milyen hosszú a Neptunuszon egy nap (földi órákban)?\n",
     "válasz": 16,
