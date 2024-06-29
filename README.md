@@ -21,6 +21,7 @@ Ezután a pontszámokat összevetheti más játékosok eredményével.
 ### Dependencies
 
 python 3.12
+
 python unicode 1.3.8
 
 ### Telepítés
