@@ -49,7 +49,7 @@ class Kérdés(ABC):
                     eszközök.gépelés(f'{információ}')
                 break
             except ValueError:
-                eszközök.gépelés(f'Nem megfelelő adattípust adtál meg. Kérlek, próbáld újra!')
+                eszközök.gépelés('Nem megfelelő adattípust adtál meg. Kérlek, próbáld újra!')
             except Exception as E:
                 eszközök.gépelés(f'Hiba: {E}')
 
@@ -220,10 +220,10 @@ def játék_kezdése(játékos_neve):
             eszközök.bevezető()
             Kérdés.kérdések_száma += 1
 
-            print(f"Játékos: {játékos_adatok_json[-1]['jatekos_neve']}" +
-                  (" " * (12 - len(játékos_adatok_json[-1]['jatekos_neve']))) +
-                  f"élet   {'*' * Kérdés.életpont}" + (" " * (5 - Kérdés.életpont)) +
-                  f"pontszám: {Kérdés.pontszám:04d}"
+            print(f'Játékos: {játékos_adatok_json[-1]["jatekos_neve"]}' +
+                  (' ' * (12 - len(játékos_adatok_json[-1]["jatekos_neve"]))) +
+                  f'élet   {"*" * Kérdés.életpont}' + (' ' * (5 - Kérdés.életpont)) +
+                  f'pontszám: {Kérdés.pontszám:04d}'
                   )
 
             random.choice(kérdések_és_helyes_válaszok).kérdés_feltesz()

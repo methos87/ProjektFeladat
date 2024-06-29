@@ -7,6 +7,7 @@ from src import eszközök
 def fő_menü(játékosneve):
     menü_elemek = ['Új játék', 'Statisztika', 'Segítség', 'Kilépés']
     while True:
+        print('\n')
         print(eszközök.gépelés('Válasz az alábbi lehetőségekből: \n'))
         for elem in menü_elemek:
             time.sleep(0.5)

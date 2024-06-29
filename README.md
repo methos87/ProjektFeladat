@@ -5,6 +5,7 @@ ASZTRO AKADÉMIA
 ## Készítette
 
 Novák Ákos
+
 https://github.com/methos87
 
 ## Leírás
@@ -37,9 +38,9 @@ python main.py
 
 ### Játék menete
 
-1.  **Futtasd a `src/játék.py`:** Ez elindítja a játékot.
-2.  **Adjuk meg a nevünket:** Adjuk meg a nevünket, amikor a rendszer erre kéri.
-3.  **Válaszolj a kérdésekre:** Válaszolj minden kérdésre a legjobb tudásod szerint.
+1.  **Futtasd a `main.py`:** Ez elindítja a játékot.
+2.  **Adjuk meg a nevünket:** Adjuk meg a nevünket, amikor a játék erre kéri.
+3.  **Válaszolj a kérdésekre:** Válaszolj a lehető legtöbb kérdésre a legjobb tudásod szerint.
 4.  **Követd nyomon a fejlődésedet:** A játék megjeleníti a pontszámodat, az életeket és egyéb statisztikákat.
 
 ## Verziók

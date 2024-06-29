@@ -12,10 +12,10 @@ def statisztika():
         with open(játékos_fájlnév, encoding='UTF-8') as játékos_fájl:
             játékos_adatok_json = json.load(játékos_fájl)
     for játékos_adat in játékos_adatok_json:
-        print(f"{sorszám}:" + (" " * (9 - len(f'{sorszám}:'))) +
-              f"{játékos_adat['jatekos_neve']}" + (' ' * (13 - len(f"{játékos_adat['jatekos_neve']}"))) +
-              f"{játékos_adat['datum'][0:-7]}     "
-              f"{játékos_adat['pontszam']}")
+        print(f'{sorszám}:' + (' ' * (9 - len(f"{sorszám}:"))) +
+              f'{játékos_adat["jatekos_neve"]}' + (' ' * (13 - len(f'{játékos_adat["jatekos_neve"]}'))) +
+              f'{játékos_adat["datum"][0:-7]}     '
+              f'{játékos_adat["pontszam"]}')
         sorszám += 1
 
 
