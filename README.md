@@ -27,6 +27,7 @@ python unicode 1.3.8
 ### Telepítés
 
 pip install unidecode
+
 git commit https://github.com/methos87/ProjektFeladat.git
 
 
