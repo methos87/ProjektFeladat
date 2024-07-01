@@ -14,6 +14,7 @@ from difflib import SequenceMatcher
 class NemSzám(Exception): pass
 
 
+# A fő Kérdés osztály
 class Kérdés(ABC):
     pontszám = 0
     kérdések_száma = 0
@@ -81,7 +82,7 @@ class Kérdés(ABC):
     def _választ_kiértékel(self, kérdés_feltétele) -> (bool, str):
         pass
 
-
+# Számos kérdéstípusok osztálya
 class SzámosKérdés(Kérdés):
     def _választ_kiértékel(self, kérdés_feltétele) -> (bool, str):
         if int(kérdés_feltétele) == int(self.helyes_válasz):
@@ -116,6 +117,7 @@ class SzámosKérdés(Kérdés):
                 return False, f'Nem jó. A válasz {str(self.helyes_válasz)} lett volna!'
 
 
+# Szöveges kérdéstípusok osztálya
 class SzövegesKérdés(Kérdés):
     def __init__(self, kérdés, helyes_válasz, minta):
         super().__init__(kérdés, helyes_válasz)
@@ -144,7 +146,7 @@ class SzövegesKérdés(Kérdés):
                 return False, f'Nem helyes! A válasz {self.helyes_válasz if (self.minta == "") else self.minta[2:-2]}' \
                               f' lett volna!'
 
-
+# Lebegőpontos kérdéstípusok osztálya
 class LebegőPontosKérdés(Kérdés):
     def _választ_kiértékel(self, kérdés_feltétele) -> (bool, str):
 
@@ -163,7 +165,7 @@ class LebegőPontosKérdés(Kérdés):
                 Kérdés._élet_vesztés()
                 return False, f'Nem jó. A válasz {str(self.helyes_válasz)} lett volna!'
 
-
+# Dátumos kérdéstípusok osztálya
 class DátumKérdés(Kérdés):
     def _választ_kiértékel(self, kérdés_feltétele) -> (bool, str):
 
@@ -184,8 +186,9 @@ class DátumKérdés(Kérdés):
             Kérdés._élet_vesztés()
             return False, f'A válasz helytelen. A helyes válasz {dátum_helyes_válasz} lett volna!'
 
-
+# A játék kezdésének függvénye
 def játék_kezdése(játékos_neve):
+    
     Kérdés.pontszám = 0
     Kérdés.kérdések_száma = 0
     kérdések_és_helyes_válaszok = []
@@ -193,11 +196,12 @@ def játék_kezdése(játékos_neve):
     játékos_fájlnév = 'log/játékos.json'
     naplo_stat.naplo(játékos_neve, Kérdés.pontszám)
 
+    # Játékos adatok json fájl beolvasása
     if os.path.isfile(játékos_fájlnév):
         with open(játékos_fájlnév, encoding='UTF-8') as játékos_fájl:
             játékos_adatok_json = json.load(játékos_fájl)
 
-    # Kérdések fájl beolvasása
+    # Kérdések és válaszok json fájl beolvasása
     if os.path.isfile(kérdések_fájlnév):
         with open(kérdések_fájlnév, encoding='UTF-8') as kérdés_fájl:
             kérdések_és_helyes_válaszok_json = json.load(kérdés_fájl)

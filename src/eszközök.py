@@ -1,7 +1,7 @@
 import os
 import time
 
-
+# A fő bevezető cím kiírása
 def bevezető():
     cím = '*' + (' ' * 15) + 'ASZTRO AKADÉMIA' + (' ' * 15) + '*'
     print('*' * len(cím))
@@ -15,7 +15,7 @@ def bevezető():
     vonalak_hossza = (len(cím) - (len(készítette) + len(dátum) + 4)) // 2
     print(('-' * vonalak_hossza) + ' ' + készítette + ', ' + dátum + ' ' + ('-' * vonalak_hossza))
 
-
+# A szövek gépelés szerü kiírásának függvény
 def gépelés(szöveg):
     print('\r')
     for i in szöveg:
@@ -25,6 +25,7 @@ def gépelés(szöveg):
     return ''
 
 
+# A segítség kiírása függvény
 def segítség():
     print('\n')
     print('''
@@ -53,6 +54,6 @@ def segítség():
 
     ''')
 
-
+# A képernyő törlése
 def clr():
     os.system('cls' if os.name == 'nt' else 'clear')

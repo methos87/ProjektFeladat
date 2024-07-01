@@ -2,9 +2,12 @@ import os
 import json
 import datetime
 
+
+# A játékos adatait tároló json fájl útvonala
 játékos_fájlnév = "log/játékos.json"
 
 
+# A játékosok eredményeit kiiró függvény
 def statisztika():
     sorszám = 1
     print('\n')
@@ -19,6 +22,7 @@ def statisztika():
         sorszám += 1
 
 
+# A játékos eredményeit (név - dátum - pontszám) naplózó függvény
 def naplo(játékos_neve, pontszám=0):
     print('\n')
     with open('log/játékos.json', 'r', encoding='UTF-8') as játékos_fájl:
@@ -33,6 +37,7 @@ def naplo(játékos_neve, pontszám=0):
         json.dump(játékos_adatok, játékos_fájl, indent=4)
 
 
+# A játékos pontszámát frissíti a naplóba
 def naplo_pontszám_frissit(pontszám):
     print('\n')
     with open('log/játékos.json', 'r', encoding='UTF-8') as játékos_fájl:

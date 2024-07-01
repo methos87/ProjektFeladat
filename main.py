@@ -4,6 +4,7 @@ from src import naplo_stat
 from src import eszközök
 
 
+# Ez a játék főmenüje
 def fő_menü(játékosneve):
     menü_elemek = ['Új játék', 'Statisztika', 'Segítség', 'Kilépés']
     while True:
@@ -35,6 +36,7 @@ def fő_menü(játékosneve):
                 continue
 
 
+# A játék inditásának fő függvénye
 def indit(*args, **kwargs):
     eszközök.clr()
     eszközök.bevezető()
